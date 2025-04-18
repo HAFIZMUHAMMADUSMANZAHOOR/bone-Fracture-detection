@@ -37,7 +37,7 @@ const About = () => {
             </div>
           ))}
         </div>
-        <button className="cta-button">Learn More</button>
+        <button id="cta-button">Learn More</button>
       </div>
     </div>
   )

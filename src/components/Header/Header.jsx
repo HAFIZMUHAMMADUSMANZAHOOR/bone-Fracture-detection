@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       <nav>
         <ul className="nav-links">
-          <li><Link to="home">Bone fracture Home</Link></li>
+          <li><Link to="home"> Home</Link></li>
           <li><Link to="about">About</Link></li>
           <li><Link to="contact">Contact</Link></li>
           <li><Link to="upload">Uplaod</Link></li>

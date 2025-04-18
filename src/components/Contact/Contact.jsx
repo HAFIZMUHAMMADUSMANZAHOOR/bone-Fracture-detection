@@ -23,9 +23,9 @@ const Contact = () => {
           <strong>Phone: 📞</strong>{' '}
           <a href="tel:+92-314-XXXXXXX">+92-314-.......</a>
           <br /><br />
-          For collaboration or inquiries, feel free to reach out to us. We are always happy to connect!
+          For collaboration or inquiries, feel free to reach out to us. <br /> We are always happy to connect!
         </p>
-        <button className="cta-button">Contact Us</button>
+        <button id="cta-button">Contact Us</button>
       </div>
       
     </div>

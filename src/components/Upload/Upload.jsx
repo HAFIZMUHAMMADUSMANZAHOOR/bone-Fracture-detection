@@ -29,6 +29,7 @@ const Upload = () => {
   }
 
   return (
+    <div className="uplodemain">
     <div className="upload-container">
       <h2>Upload & Analyze X-ray Image</h2>
 
@@ -68,6 +69,7 @@ const Upload = () => {
         </button>
         <button onClick={resetPreview}>Reset</button>
       </div>
+    </div>
     </div>
   )
 }

@@ -13,6 +13,13 @@ const Home = () => {
         </div>
       </div>
       {/* Optional: Add an image section here */}
+        
+      <img
+          src="/images/Nurse.png"
+          alt="Fracture Detection"
+          style={{ width: '30%', borderRadius: '10px' }}
+        />
+      
     </div>
   );
 };
