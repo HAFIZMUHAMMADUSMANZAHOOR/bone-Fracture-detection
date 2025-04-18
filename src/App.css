@@ -1,41 +1,10 @@
-/* Root container */
-#root {
-  /* max-width: 1280px; */
-  margin: 0 auto;
-  text-align: center;
-  /* padding: 1rem; Reduce padding for smaller screens */
-}
 
-
-
-/* Disable animation for users with reduced motion */
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-/* Card styling */
-.card {
-  padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  max-width: 90%;
-  margin: 10px auto;
-}
-
-/* Text Color */
-.read-the-docs {
-  color: #888;
-}
-
-/* Global Body Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  box-sizing: border-box;
   /* color: #333; */
 }
 
@@ -176,14 +145,7 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
+/* First Group */
 
 
 .container {
@@ -269,19 +231,8 @@ nav {
 }
 
 
+/* Second Group */
 
-
-
-
-
-
-
-
-
-
-
-
-/* Upload Container */
 /* Upload Container */
 .upload-container {
   width: 90%;
@@ -403,9 +354,7 @@ nav {
   }
 }
 
-
-
-
+ /* Third Group */
 
 /* Swiper Container Styling */
 #Medicine {
@@ -552,16 +501,10 @@ nav {
 }
 
 
-
-
-
-
-
-
+ /* Fourth Group */
 
 .about-container {
   display: flex;
-
   align-items: center;
   justify-content: center;
   background: #1e293b; /* Dark Blue */
@@ -591,10 +534,6 @@ nav {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(250, 204, 21, 0.3); /* Soft golden glow */
 }
-
-
-
-
 /* Right Side - About Content */
 .about-content {
   flex: 1;
@@ -635,19 +574,6 @@ ul {
   height: 100%;
   background: #facc15;
 }
-
-/* Button */
-/* .cta-button {
-  background-color: #eab308;
-  /* padding: 10px 20px; */
-  /* border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 10px;
-} */ */
-
 .cta-button:hover {
   background-color: #005f73;
 }
@@ -685,18 +611,8 @@ ul {
     margin: 10px auto;
   }
 }
-
-
-   
-
-
-
-
-
-
-
-
-
+ 
+/* Fifit Group */
 
 .contact-container {
  
@@ -770,11 +686,6 @@ ul {
   transition: 0.3s;
   margin-top: 10px;
 }
-
-/* .cta-button:hover {
-  backg
-} */
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-container {
@@ -795,19 +706,7 @@ ul {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Six Group */
 
 #advice-section {
   background: linear-gradient(to right, #1e293b, #0f172a);
@@ -891,12 +790,7 @@ ul {
   }
 }
 
-
-
-
-
-
-
+ /* Last Group */
 
 footer {
   background: linear-gradient(to right, #002b36, #005f73);
@@ -963,7 +857,7 @@ footer {
 .footer-bottom p {
   margin: 0;
 }
-
+ 
 @media (max-width: 768px) {
   .social-icons {
     flex-wrap: wrap;

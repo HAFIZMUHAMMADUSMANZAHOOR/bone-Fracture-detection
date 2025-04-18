@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -8,26 +8,24 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Advice from './components/Advice/Advice';
 import Footer from './components/Footer/Footer';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function App() {  // ✅ Function defined properly
   return (
     <>
-      <div className="main2">
+      <Router>
         <Header />
-        <Home />
-      </div>
-      <Upload />
-      <Medicine />
-      <div className="main3" style={{ display: 'flex', marginBottom: '33px' }}>
-        <About />
-      </div>
-      <div className="class" style={{ display: 'flex' }}>
-        <Contact />
-      </div>
-      <div className="main5">
-        <Advice />
-      </div>
-      <Footer />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/upload' element={<Upload />} />
+          <Route path='/medicine' element={<Medicine />} />
+          <Route path='/adviceSection' element={<Advice />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

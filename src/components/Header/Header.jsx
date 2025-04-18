@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 // import "./Header.css"; // Ensure this file exists and styles are properly added
 
@@ -6,16 +7,19 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
+        <Link to={"/"}>
         <img src="/images/Logo.jpg" alt="X-ray warning sign" />
+        </Link>
+        
       </div>
       <nav>
         <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#upload-area">Detection</a></li>
-          <li><a href="#medicine">Medicine</a></li>
-          <li><a href="#advice-section">Advice</a></li>
+          <li><Link to="home">Home</Link></li>
+          <li><Link to="about">About</Link></li>
+          <li><Link to="contact">Contact</Link></li>
+          <li><Link to="upload">Uplaod</Link></li>
+          <li><Link to="medicine">Medicine</Link></li>
+          <li><Link to="adviceSection">Advice</Link></li>
         </ul>
       </nav>
       <button className="button-1">Login</button>
