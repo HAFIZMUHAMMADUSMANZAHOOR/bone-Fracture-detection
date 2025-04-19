@@ -1,58 +1,69 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-  faLinkedinIn,
-  faWhatsapp
-} from '@fortawesome/free-brands-svg-icons'
-// import './Footer.css'
+import React from 'react';
+// import './Footer.css';
 
 const Footer = () => {
-  const socialIcons = [
-    { icon: faFacebookF, link: '#' },
-    { icon: faTwitter, link: '#' },
-    { icon: faInstagram, link: '#' },
-    { icon: faLinkedinIn, link: '#' },
-    { icon: faWhatsapp, link: '#' }
-  ]
-
   return (
-    <footer className="modern-footer">
+    <footer className="medical-footer">
       <div className="footer-container">
-        <h2 className="footer-title">Bone Fracture Detection</h2>
-        <p className="footer-tagline">
-          Powered by AI to detect fractures and provide expert advisory support for better recovery.
-        </p>
+        {/* Brand Section */}
+        <div className="footer-section">
+          <h4>BoneCare Diagnostics</h4>
+          <p>Advanced AI-powered fracture detection and treatment advisory system</p>
+          <div className="social-icons">
+            <a href="#"><i className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-twitter"></i></a>
+            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="#"><i className="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        {/* Quick Links */}
+        <div className="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Fracture Detection</a></li>
+            <li><a href="#">Treatment Advice</a></li>
+            <li><a href="#">Medicine Database</a></li>
+            <li><a href="#">Recovery Timeline</a></li>
+          </ul>
+        </div>
+
+        {/* Medical Resources */}
+        <div className="footer-section">
+          <h4>Medical Resources</h4>
+          <ul>
+            <li><a href="#">First Aid for Fractures</a></li>
+            {/* <li><a href="#">Orthopedic Specialists</a></li> */}
+            <li><a href="#">Physical Therapy</a></li>
+            <li><a href="#">Pain Management</a></li>
+            <li><a href="#">Emergency Contacts</a></li>
+          </ul>
+        </div>
 
         {/* Contact Info */}
-        <div className="footer-contact">
-          <p>Email: <a href="mailto:info@fractureai.com">info@fractureai.com</a></p>
-          <p>Phone: <a href="tel:+923001234567">+92 300 1234567</a></p>
+        <div className="footer-section">
+          <h4>Contact Us</h4>
+          <div className="contact-info">
+            <p><i className="fas fa-map-marker-alt"></i> 123 Health Street, Medical City</p>
+            <p><i className="fas fa-phone"></i> +92 300 1234567</p>
+            <p><i className="fas fa-envelope"></i> support@bonecare.com</p>
+            <p><i className="fas fa-clock"></i> 24/7 Emergency Support</p>
+          </div>
         </div>
+      </div>
 
-        {/* Newsletter Subscription */}
-        <div className="footer-newsletter">
-          <input type="email" placeholder="Your Email" />
-          <button type="button">Subscribe</button>
+      {/* Disclaimer and Copyright */}
+      <div className="footer-bottom">
+        <div className="disclaimer">
+          <p><strong>Disclaimer:</strong> This system provides preliminary fracture detection and treatment suggestions. Always consult with a qualified healthcare professional for proper diagnosis and treatment.</p>
         </div>
-
-        <ul className="footer-social-icons">
-          {socialIcons.map((social, index) => (
-            <li key={index}>
-              <a href={social.link} target="_blank" rel="noreferrer" className="footer-social-icon">
-                <FontAwesomeIcon icon={social.icon} />
-              </a>
-            </li>
-          ))}
-          
-        </ul>
-
-        
+        <div className="copyright">
+          <p>&copy; 2023 BoneCare Diagnostics. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">HIPAA Compliance</a></p>
+        </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
